@@ -1,0 +1,15 @@
+{
+  "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "dynamic-component": {
+      "description": "A blank schematic.",
+      "factory": "./dynamic-component/index#dynamicComponent"
+    },
+    "component": {
+      "aliases": ["c"],
+      "description": "A schematic for generating component, with optional rxjs dynamic management",
+      "factory": "./dynamic-component/index#dynamicComponent",
+      "schema": "./dynamic-component/schema.json"
+    }
+  }
+}
